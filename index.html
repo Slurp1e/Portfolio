@@ -6,13 +6,29 @@
     <link rel="stylesheet" href="assets/css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script type="text/javascript">
+
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > 50) {
+        document.getElementById("hide").style.top = "0";
+      } else {
+        document.getElementById("hide").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+      }
+
+    </script>
   </head>
   <body>
-      <div class="main-wrapper" style="background-image: url(assets/img/bg.jpg); background-size: cover;">
-        <img class="logo" src="assets/img/logo.jpg" alt="My Logo"></img>
+      <div class="main-wrapper" style="background-image: url(assets/img/bg.jpg); background-size: cover; ">
+        <img class="logo" src="assets/img/logo.jpg" alt="My Logo" style="margin-top: 12.5%;"></img>
         <h1 class="logo-tagline">SLURP1E</h1><br>
         <h3 class="title">Junior Web Developer</h3>
 
+        <!-- Social Icons Container -->
         <div class="social-box">
           <a href="https://www.youtube.com/channel/UCVpmxhxs0KjZ0_YvAcban3w?" target="_blank" class="social-button"><img class="social-icon" src="assets/img/social-media/yt.png" alt="My Logo" style="margin-left: 5px;"></img></a>
           <a href="https://github.com/slurp1e" target="_blank" class="social-button"><img class="social-icon" src="assets/img/social-media/github.png" alt="My Logo" style="margin-left: 5px;"></img></a>
@@ -20,7 +36,28 @@
           <a href="https://discord.gg/mhJaeh9" target="_blank" class="social-button"><img class="social-icon" src="assets/img/social-media/discord.png" alt="My Logo" style="margin-left: 5px;"></img></a>
         </div>
 
-        <div class="indicator"><span style="color: white; font-weight: bold;">V</span></div>
+        <!-- Scrolling Indicator -->
+        <div class="indicator" id="hide"><span style="color: white; font-weight: bold;">V</span></div>
+      </div>
+
+      <!-- Gallery Container -->
+      <div class="custom-row">
+        <br>
+
+        <!-- Gallery Description -->
+        <div class="row">
+          <div class="col-md-12" align="center">
+            <h1>Projects</h1>
+          </div>
+          <div class="col-md-12" align="center">
+            <p>List of projects from 2019 > 2020</p>
+          </div>
+        </div>
+
+        <!-- Project Gallery -->
+        <div class="row">
+
+        </div>
       </div>
   </body>
 </html>
