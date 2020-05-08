@@ -44,7 +44,7 @@
   margin-top: 5px;
   text-align: center;
   color: white;
-  background-color: rgba(211, 211, 211, 0.2);
+  background-color: rgba(50, 50, 50, 0.6);
   padding: 15px;
   font-size: 20px;
 }
@@ -83,4 +83,10 @@
   background-color: #323232;
   margin-top: 50px;
   font-size: 12px;
+}
+
+.indicator span {
+  display: block;
+  position: relative;
+  top: 7.5px;
 }
